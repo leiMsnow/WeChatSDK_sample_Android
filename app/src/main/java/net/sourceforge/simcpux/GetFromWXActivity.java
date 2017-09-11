@@ -100,7 +100,6 @@ public class GetFromWXActivity extends Activity {
 				WXMediaMessage msg = new WXMediaMessage();
 				msg.mediaObject = imgObj;
 
-				// 设置消息的缩略图
 				Bitmap thumbBmp = Bitmap.createScaledBitmap(bmp, THUMB_SIZE, THUMB_SIZE, true);
 				bmp.recycle();
 				msg.thumbData = Util.bmpToByteArray(thumbBmp, true);
